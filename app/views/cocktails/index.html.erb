@@ -1,3 +1,8 @@
+<div class="main-pic">
+<%= cl_image_tag("https://res.cloudinary.com/dsxzb0ouf/image/upload/v1582297465/cocktails-promo_adkymt.webp",
+      width: 400, height: 300, crop: :fill) %>
+</div>
+
 <h1>Cocktails selection</h1>
 <ul>
   <% @cocktails.each do |cocktail| %>
@@ -6,3 +11,4 @@
 </ul>
 
 <%= link_to 'New Cocktail', new_cocktail_path %>
+<br>
