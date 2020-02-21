@@ -1,3 +1,8 @@
+<div class="second-pic">
+<%= cl_image_tag("https://res.cloudinary.com/dsxzb0ouf/image/upload/v1582299534/aviation-cocktail3_q9p3mt.jpg",
+      height: 400, crop: :fill) %>
+
+<div>
 <h1><%=  @cocktail.name %></h1>
 
 <ul>
@@ -11,9 +16,11 @@
 </li>
 <% end %>
 </ul>
-
-
-<%= link_to 'All cocktails', cocktails_path %>
-<br>
 <%= link_to 'Add new doses', new_cocktail_dose_path(@cocktail) %>
+</div>
+
+</div>
+
+<br>
+<%= link_to 'Back to all cocktails', cocktails_path %>
 
